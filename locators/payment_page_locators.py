@@ -1,0 +1,21 @@
+from selenium.webdriver.common.by import By
+
+class PaymentPageLocators:
+    DONATE_BUTTON = (By.XPATH, '//button[.//span[text()="Donasi Sekarang"]]')
+    NOMINAL_LABEL = (By.XPATH, '//button[.//span[text()="Rp10.000"]]')
+    NAME_INPUT = (By.CSS_SELECTOR, 'input[data-path="name"]')
+    PHONE_INPUT = (By.CSS_SELECTOR, 'input[data-path="phone"]')
+    EMAIL_INPUT = (By.CSS_SELECTOR, 'input[data-path="email"]')
+    NOTES_INPUT = (By.CSS_SELECTOR, 'textarea[data-path="notes"]')
+    DIALOG = (By.CSS_SELECTOR, 'section[role="dialog"]')
+    CHECKBOX = (By.XPATH, '//input[@type="checkbox" and @data-path="is_anonymous"]')
+    LANJUTKAN_BUTTON = (By.XPATH, '//button[.//span[text()="Lanjutkan"]]')
+    KEMBALI_BUTTON = (By.XPATH, '//button[.//span[text()="Kembali"]]')
+    PEMBAYARAN_BUTTON = (By.XPATH, '//button[.//span[text()="Pembayaran"]]')
+    QRIS_BUTTON = (By.CSS_SELECTOR, 'img[alt="QRIS"]')
+    VA_BUTTON = (By.CSS_SELECTOR, 'img[alt="BRI"]')
+    BANK_BUTTON = (By.CSS_SELECTOR, 'img[alt="Muamalat"]')
+    QRIS_DOWNLOAD_BUTTON = (By.XPATH, '//button[.//span[text()="Unduh QRIS"]]')
+    COPY_ACCOUNT_BUTTON = (By.CSS_SELECTOR, 'div.mantine-Skeleton-root > div.mantine-Flex-root > button.mantine-ActionIcon-root')
+    COPY_NOMINAL_BUTTON = (By.CSS_SELECTOR, 'div.mantine-Skeleton-root > div.mantine-Stack-root > div.mantine-Flex-root > button.mantine-ActionIcon-root')
+    CHECK_STATUS_BUTTON = (By.XPATH, '//button[.//span[text()="Cek Status Pembayaran"]]')
